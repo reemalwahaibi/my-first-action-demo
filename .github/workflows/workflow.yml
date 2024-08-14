@@ -8,15 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-        # Checks out the repository under $GITHUB_WORKSPACE, so the workflow can access it
-        
       - name: Display Custom Message
         run: |
           echo "------------------------------------"
           echo "Welcome to your first GitHub Actions workflow!"
           echo "------------------------------------"
-        # Runs a shell script to display a custom message
